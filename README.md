@@ -1,2 +1,6 @@
 # This is my official site.
-# Thanks for reading this README page.
+## I might have a few alternate links that I will be removing soon.
+
+___
+
+Thanks for reading this README page.
