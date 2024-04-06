@@ -20,7 +20,9 @@
 </nav>
 
 <div class="container-fluid bg-dark text-white p-5" style="text-align:center;">
-  <br><br><h1 style="user-select:none;">Click(s):</h1><br>
+  <br><br>
+  <p>Press <kbd>R</kbd> to reset.</p>
+  <h1 style="user-select:none;">Click(s):</h1><br>
   <h1 id='count' style="user-select:none;">0</h1>
 </div>
 
@@ -29,11 +31,13 @@
 </div>
 
 <script>
-if (localStorage.count === undefined) {localStorage.count = 0};
+if (localStorage.count === null) {localStorage.count = 0};
+document.getElementById("count").innerHTML = localStorage.count;
 function inc() {
   localStorage.count += 1;
   document.getElementById("count").innerHTML = localStorage.count;
 };
+window.addEventListener('keydown', function (e) {if (e.keycode == 82) {localStorage.count=0}});
 </script>
 
 </body>
