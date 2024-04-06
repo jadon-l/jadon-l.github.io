@@ -37,7 +37,7 @@ function inc() {
   localStorage.count += 1;
   document.getElementById("count").innerHTML = localStorage.count;
 };
-window.addEventListener('keydown', function (e) {if (e.keycode == 82) {localStorage.count=0}});
+window.addEventListener('keydown', function (e) {if (e.which == 82) {localStorage.count=0}});
 </script>
 
 </body>
