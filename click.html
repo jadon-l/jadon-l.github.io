@@ -21,7 +21,7 @@
 
 <div class="container-fluid bg-dark text-white p-5" style="text-align:center;">
   <br><br>
-  <p style="user-select:none;">Press <kbd>R</kbd> to reset.</p><br><br>
+  <p style="user-select:none;">Press <kbd>L</kbd> to reset.</p><br><br>
   <h1 id='count' style="user-select:none;">0</h1>
 </div>
 
@@ -37,7 +37,7 @@ function inc() {
   document.getElementById("count").innerHTML = localStorage.count;
 };
 window.addEventListener('keydown', function (e) {
-  if (e.which == 82) {
+  if (e.which == 76) {
     localStorage.count=0;
     document.getElementById("count").innerHTML = localStorage.count;
   }
