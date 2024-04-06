@@ -13,19 +13,19 @@
   <div class="container-fluid">
     <ul class="navbar-nav">
       <li class="nav-item px-3">
-        <a class="nav-link active text-white" href="index.html">Homepage</a>
+        <a class="nav-link active text-white" href="index.html" style="user-select:none;">Homepage</a>
       </li>
     </ul>
   </div>
 </nav>
 
 <div class="container-fluid bg-dark text-white p-5" style="text-align:center;">
-  <br><br><h1>Click(s):</h1><br>
-  <h1 id='count'>0</h1>
+  <br><br><h1 style="user-select:none;">Click(s):</h1><br>
+  <h1 id='count' style="user-select:none;">0</h1>
 </div>
 
 <div class="container-fluid bg-dark text-white p-5">
-  <p>© Jadon Lim. All rights reserved.<br>This site is powered by Github Pages.<br>Translation powered by Google Translate.<br>Design powered by Bootstrap 5.3.2.</p>
+  <p style="user-select:none;">© Jadon Lim. All rights reserved.<br>This site is powered by Github Pages.<br>Translation powered by Google Translate.<br>Design powered by Bootstrap 5.3.2.</p>
 </div>
 
 <script>
@@ -35,13 +35,6 @@ function inc() {
   document.getElementById("count").innerHTML = count;
 };
 </script>
-<div id="google_translate_element"></div>
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
-}
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  
+
 </body>
 </html>
