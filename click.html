@@ -32,7 +32,7 @@
 </div>
 
 <script>
-if (localStorage.count === null) {localStorage.count = 0};
+if (localStorage.count === undefined || localStorage.count === NaN) {localStorage.count = 0};
 document.getElementById("count").innerHTML = localStorage.count;
 function inc() {
   localStorage.count = parseInt(localStorage.count) + 1;
