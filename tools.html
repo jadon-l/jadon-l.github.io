@@ -54,13 +54,13 @@ function googleTranslateElementInit() {
 function checkTime(i, p) {
   if (p == 10) {
     if (i < 10) {
-      i += '0';
+      i = '0' + i;
     }
   } else if (p == 1000) {
     if (i < 100 && i > 9) {
-      i += '0';
+      i = '0' + i;
     } else {
-      i += '00';
+      i = '00' + i;
     }
   }
   return i;
