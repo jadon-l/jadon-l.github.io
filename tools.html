@@ -57,10 +57,10 @@ function checkTime(i, p) {
       i = '0' + i;
     }
   } else if (p == 1000) {
-    if (i < 100 && i > 9) {
-      i = '0' + i;
-    } else {
+    if (i < 10) {
       i = '00' + i;
+    } else if (i < 100) {
+      i = '0' + i;
     }
   }
   return i;
