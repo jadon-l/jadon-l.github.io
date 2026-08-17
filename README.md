@@ -1,5 +1,5 @@
 # This is my official site.
-## I might have a few alternate links that I will be removing soon.
+## - Jadon
 
 ___
 
